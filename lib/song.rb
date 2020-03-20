@@ -17,7 +17,9 @@ class Song
   end 
   
   def self.new_by_name 
-    self.all.each do |song| puts #{song.name} 
+    song = self.new 
+    song.name = name 
+    song 
   end 
   end 
 
